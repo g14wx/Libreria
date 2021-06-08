@@ -9,7 +9,7 @@ namespace Libreria.Models
 {
     public class Autor
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         [Required(ErrorMessage = "Este campo es requerido")]
         [DisplayName("ISBN Autor")]
         [MinLength(1, ErrorMessage = "Error El ISBN del autor debe de ser mayor a 1 caractér")]

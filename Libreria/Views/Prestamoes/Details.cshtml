@@ -1,0 +1,58 @@
+﻿@model Libreria.Models.Prestamo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Prestamo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CopiaLIbro.Identificador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CopiaLIbro.Identificador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Miembro.Nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Miembro.Nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaRetorno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaRetorno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaDePrestamo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaDePrestamo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comentarios)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

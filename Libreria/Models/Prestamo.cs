@@ -18,7 +18,7 @@ namespace Libreria.Models
         public DateTime FechaDePrestamo { get; set; }
         [Required(AllowEmptyStrings = true)]
         public String Comentarios { get; set; } 
-        `public int CopiaLibroID { get; set; }
+        public int CopiaLibroID { get; set; }
         public virtual CopiaLIbro CopiaLIbro { get; set; }
         public int MiembroID { get; set; }
         public virtual Miembro Miembro { get; set; }
